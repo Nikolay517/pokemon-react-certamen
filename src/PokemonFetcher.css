@@ -1,16 +1,11 @@
 .pokemon-container {
-  font-family: 'Arial', sans-serif;
   text-align: center;
   padding: 20px;
-  background-color: #c56464;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  align-self: center;
+  font-family: sans-serif;
 }
 
-.pokemon-container h2 {
-  color: #333;
-  margin-bottom: 25px;
+.filtro-tipos {
+  margin: 15px 0;
 }
 
 .pokemon-list {
@@ -21,47 +16,20 @@
 }
 
 .pokemon-card {
-  background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  width: 200px; /* Ancho fijo para cada tarjeta */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease-in-out;
+  border-radius: 12px;
+  padding: 10px;
+  width: 160px;
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
 }
 
 .pokemon-card:hover {
-  transform: translateY(-5px);
-}
-
-.pokemon-card h3 {
-  color: #007bff;
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-size: 1.3em;
+  transform: scale(1.05);
 }
 
 .pokemon-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.pokemon-card p {
-  font-size: 0.95em;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-.pokemon-card p strong {
-  color: #333;
-}
-
-.pokemon-container.error {
-  color: #d9534f;
-  border-color: #d9534f;
-  background-color: #f2dede;
-  padding: 15px;
-  border-radius: 8px;
+  width: 100px;
+  height: 100px;
 }
