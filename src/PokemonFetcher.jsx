@@ -14,7 +14,7 @@ const PokemonFetcher = () => {
         setCargando(true);
         setError(null);
 
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=685`);
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=691`);
         const data = await response.json();
 
         const pokemonData = await Promise.all(
