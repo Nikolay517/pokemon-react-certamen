@@ -1,3 +1,15 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f2f2f2, #dff1ff);
+  background-image: url(https://wallpapers.com/images/featured/pokemon-hd-fazqcs1tmwwte1ap.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
 .pokemon-container {
   text-align: center;
   padding: 20px;
@@ -26,10 +38,34 @@
 }
 
 .pokemon-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  color: #333;
 }
 
 .pokemon-card img {
   width: 100px;
   height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.pokemon-card:hover img {
+  transform: scale(1.1) rotate(3deg);
+}
+
+.pokemon-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.dropdowns {
+  margin-bottom: 40px;
 }
